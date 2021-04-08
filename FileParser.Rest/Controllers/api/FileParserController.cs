@@ -39,6 +39,9 @@ namespace FileParser.Controllers
 
                 var inputStream = inputString.GenerateStreamFromString();
 
+               //dalo by se to optimalizovat pomoci ChainOfResponsibility nebo enum.
+               // aby se zjistitlo co za soubor jsme dostaly.
+
                 var isXmlValid = _xmlHandler.IsValidXml(inputStream);
                 if (isXmlValid == true)
                 {
