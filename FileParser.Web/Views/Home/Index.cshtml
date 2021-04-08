@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="ConvertFileToJson" method="post"
+          enctype="multipart/form-data">
+
+        <input type="file" name="file" />
+        <button type="submit">Convert File To Json</button>
+    </form>
+
+    <form asp-controller="Home" asp-action="ConvertFileToXml" method="post"
+          enctype="multipart/form-data">
+
+        <input type="file" name="file" />
+        <button type="submit">Convert File To Xml</button>
+    </form>
+
+    <form asp-controller="Home" asp-action="ConvertToXmlFromUri" method="post">
+
+        <input type="text" name="url" />
+        <button type="submit">Convert To Xml From Uri</button>
+    </form>
+
+    <form asp-controller="Home" asp-action="ConvertToJsonFromUri" method="post">
+
+        <input type="text" name="url" />
+        <button type="submit">Convert To Json From Uri</button>
+    </form>
+
+    <form asp-controller="Home" asp-action="ConvertFileToJsonAndSenByEmail" method="post"
+          enctype="multipart/form-data">
+
+        <input type="file" name="file" />
+        <button type="submit">Convert File To Json and send by email</button>
+    </form>
+</div>
