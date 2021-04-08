@@ -1,4 +1,9 @@
 # FileParser
+
+FileParser.Rest - Api
+
+FileParser.Web  - Client
+
 WebApi to Web project.
 Convertering from Xml to Json and back. 
 Downloading result file. 
